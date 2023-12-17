@@ -48,7 +48,7 @@ const App = () => {
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       {/* Check the implementation of each component, to see what props they require, if any! */}
-      <SearchBar onChange={evt => setSearch(evt.target.value)}/>
+      <SearchBar onsubmit={evt => setSearch(evt.target.value)}/>
       <Posts posts={posts} likePost={likePost} />
     </div>
   );
